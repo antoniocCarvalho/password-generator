@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Gerar-Senha</title>
+  </head>
+  <body>
+    <div class="input-box">
+      <div id="titulo">
+        <h1>WELCOME TO</h1>
+      </div>
+
+      <h1>PASSWORD GENERATOR</h1>
+      <input
+        type="text"
+        placeholder="Password Generate"
+        id="password"
+        readonly=""
+      />
+      <h1>Password length:</h1>
+      <p id="valorRetorno">5</p>
+      <input type="range" id="passwordLenght" min="5" max="25" value="5" />
+
+      <div id="btn" onclick="getPassword()">Generate</div>
+    </div>
+    <script src="/javascript/main.js"></script>
+  </body>
+</html>

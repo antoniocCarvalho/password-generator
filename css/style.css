@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  /*não permite selecionar o texto ao dar dois cliques */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 200px;
+  font-size: larger;
+}
+
+.input-box {
+  width: 450px;
+}
+
+#titulo {
+  margin-left: 95px;
+}
+.input-box input {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  margin: 15px 0 20px;
+  outline: none;
+  font-size: 24px;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  box-shadow: -4px -4px 5px rgba(255, 255, 255, 1),
+    inset 4px 4px 5px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px rgba(255, 255, 255, 1), 4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input::placeholder {
+  letter-spacing: 0;
+}
+
+.input-box #btn {
+  position: relative;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-left: 150px;
+}
+
+.input-box #btn:hover {
+  background: #279eb0;
+}
